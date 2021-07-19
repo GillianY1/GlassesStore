@@ -1,0 +1,41 @@
+body{
+    line-height: 1.5;
+}
+.container{
+    max-width: 1010px; 
+    margin: 0 auto;
+    font-family: $font-family-main;
+    h2{
+        font-size: 3rem;
+        font-weight: bold;
+        color: $color-main;
+    }
+    @include pad{
+        width: 90%;//max-width:682px; //padding: 0 2.5rem; 
+    }
+    @include phone{
+        width: 92%;//max-width:345px; //padding: 0 1rem;
+    }   
+}
+
+.container-padding{
+    padding: 60px 0 80px 0;
+    @include pad{
+        padding: 40px 0 54px 0;
+    }
+    @include phone{
+        padding: 30px 0 40px 0;
+    }
+}
+
+
+.inform{
+    .submit{
+        @include reset-btn;
+        padding: 1rem 143px;  
+        background-color: $color-main;
+        &:hover{
+            background-color: pink;
+        }
+    }
+}

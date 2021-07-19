@@ -1,0 +1,145 @@
+.footer{
+    background-color: $color-main;
+    color:white;
+    a{color:white;}
+    padding: 2rem 0 2.5rem;
+    img {display: block;}
+}
+.footer-nav{
+    margin-bottom: 2rem;
+}
+.footer-nav-items{
+    li+li{margin-left: 3rem;}
+}
+.footer-media {
+    li+li{
+        margin-left: 2rem;
+    }
+}
+.footer-media-phone{
+    display: none;
+}
+.footer-contacts{
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    border-bottom: solid 1px $color-sec;
+}
+.footer-contacts-list{
+    font-size: $font-size-l; //32
+    li {
+        display: flex;
+        align-items: center;
+        img{
+            width: 2rem;
+            height: 2rem;
+            margin-right: 20px;
+        } 
+        &+li{
+            margin-top: 1rem;
+        }   
+    }
+}
+.service-doc{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    a{
+        display: block;
+        font-size: $font-size-s;
+        &:last-child{
+            margin-left: 3rem;
+        }
+    }
+}
+/*-------------pad-----------*/
+@media(max-width:$pad-width){
+    .footer{
+        padding-bottom:  2rem;//1.25rem;
+    }
+    .footer-nav{
+        margin-bottom: 18px;
+    }
+    .footer-nav-items{
+        li+li{margin-left: 2.5rem;}
+    }
+    .footer-media {
+        li+li{
+            margin-left: 1.5rem;
+        }
+        img{
+            width: 1.5rem; 
+            height: 1.5rem;   
+        }
+    }
+    .footer-contacts{
+        padding-bottom: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+    .footer-contacts-list{
+        font-size: $font-size-sm; //20
+        li {
+            img{
+                width: 18px; 
+                height: 18px;
+                margin-right: 10px;
+            }
+            &+li{
+                margin-top: 0.75rem;
+            } 
+        }    
+    }
+    .service-doc{
+        a:last-child {
+            margin-left: 1.5rem;
+        }
+    }
+}
+
+/*------------phone-----------*/
+@media(max-width:$phone-width) {
+    .footer{
+        padding:1.5rem 0px ;
+    }
+    .footer-nav, .footer-media{
+        display: none;
+    }
+    .footer-media-phone{
+        display: flex;
+        justify-content: center;
+        li+li{
+            margin-left: 1.5rem;
+        }
+        img{
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+    .footer-contacts{
+        margin-bottom: 1rem;
+        align-items: start;
+    }
+    .footer-contacts-list{
+        font-size: 1rem;
+        li {
+            img{
+            width: 1rem;
+            height: 1rem;
+            margin-right: 6.5px;
+            }
+            &+li{
+                margin-top: 6px;
+            } 
+        }
+    }
+    .service-doc{
+        p,a{
+            width: 100%;
+            font-size: $font-size-s;
+            margin-bottom: 0.5rem;
+        }
+        a:last-child {
+            margin: 0px;
+        }
+    }
+
+}

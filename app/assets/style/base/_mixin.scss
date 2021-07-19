@@ -1,0 +1,55 @@
+
+$pad-width: 992px;
+$phone-width: 767px;
+
+$color-main: #AA0601;
+$color-sec:  #FBF2F2;
+$color-dark: #111619;
+
+$font-family-main: 'Roboto, sans-serif';
+$font-family-sec: 'Noto Sans, sans-serif';
+
+$font-size-s: 14px;
+$font-size-sm :20px;
+$font-size-m: 1.5rem;//24px;
+$font-size-l: 2rem;
+
+
+
+/* @include pad{} */
+@mixin pad{
+	@media (max-width:992px){
+		@content
+	}
+}
+
+@mixin phone{
+	@media (max-width:767px){
+		@content
+	}
+}
+
+@mixin reset-btn{
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+
+    background: transparent;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+}
+

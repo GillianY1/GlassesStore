@@ -1,0 +1,62 @@
+/* add */
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+*, *:after, *:before{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.d-flex-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.d-flex-sb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mr-auto{
+    margin-right:auto;
+}
+
+.font-size-s {font-size: 14px;}
+.font-24 {font-size: 1.5rem;}
+.font-20 {font-size: 1.25rem;}
+.font-48 {font-size: 3rem;}
+
+
+
+
+.reset-btn{
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+
+    background: transparent;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+}
+
+

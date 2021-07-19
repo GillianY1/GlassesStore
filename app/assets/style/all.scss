@@ -1,23 +1,10 @@
-$color: #00cc99;
+@import "base/reset";
+@import "base/mixin";
+@import "base/basic";
+@import "layout/header";
+@import "layout/nav";
+@import "layout/footer";
+@import "components/module";
+@import "pages/index";
 
-.header {
-  height: 200px;
-  background-color: #00cc99;
-}
 
-.footer {
-  height: 200px;
-  background-color: #00cc99;
-}
-
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
-  }
-}
