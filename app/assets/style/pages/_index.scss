@@ -28,6 +28,71 @@ body{
     }
 }
 
+.banner{
+    background-image: url(../images/banner.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 864px;
+    padding-right: 21%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    @include pad{
+        padding-right: 5%;
+
+    }
+    @include phone{
+        background-image: url(../images/banner-sm.png);
+        height: 394px;
+        padding-right: 4%;
+    }
+}
+.banner-text{
+    text-align: right;
+    color: $color-main;
+    h3{
+        font-size: $font-size-sm; //20px
+        @include phone{
+            font-size: 1rem;
+        }
+    }
+    h2{
+        font-size: $font-size-ll; //48
+        font-weight: bold;
+        @include phone{
+            font-size: 2rem;
+        }
+    }
+}
+
+.designer_1{
+    background-image: url(../images/product-8.png);
+}
+.designer_2{
+    background-image: url(../images/product-9.png);
+}
+.desinger_serial{
+    li{
+        width: 540px;
+        height: 455px; /*auot?*/
+        h3{
+            opacity: 1;
+            color: $color-main;
+            font-size: 4.5rem;//72
+        }
+        @include pad{
+            width: 330px;
+            height: 278px;
+        }
+        @include phone{
+            width: 100%;/*345px;*/
+            height: auto;/*291px;*/
+        }
+    }
+}
+
+
 
 .inform{
     .submit{
