@@ -130,7 +130,7 @@ a {
   padding: 30px 4.6%;
   font-size: 20px; }
   .header h1 a {
-    background: url(../images/logo.png);
+    background: url(./assets/images/logo.png);
     background-size: cover;
     width: 80px;
     height: 49px;
@@ -190,7 +190,7 @@ a {
     display: block; }
 
 .footer-nav {
-  margin-bottom: 2rem; }
+  margin-bottom: 1.5rem; }
 
 .footer-nav-items li + li {
   margin-left: 3rem; }
