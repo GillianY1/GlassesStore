@@ -2,19 +2,23 @@ body{
     line-height: 1.5;
 }
 .container{
-    max-width: 1010px; 
+    max-width: 1110px; 
     margin: 0 auto;
     font-family: $font-family-main;
     h2{
         font-size: 3rem;
-        font-weight: bold;
-        color: $color-main;
+        font-weight: 800;
+        color: $color-dark-red;
+        text-align: center;
     }
     @include pad{
         width: 90%;//max-width:682px; //padding: 0 2.5rem; 
     }
     @include phone{
         width: 92%;//max-width:345px; //padding: 0 1rem;
+        h2{
+            font-size: $font-size-m; //24px
+        }
     }   
 }
 
@@ -50,7 +54,7 @@ body{
 }
 .banner-text{
     text-align: right;
-    color: $color-main;
+    color: $color-dark-red;
     h3{
         font-size: $font-size-sm; //20px
         @include phone{
@@ -65,6 +69,57 @@ body{
         }
     }
 }
+.slogan{
+    background: $color-sec;
+    h2{
+        margin-bottom: 3rem;
+    }
+}
+.slogan-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li{
+        width: 255px;/*23%;*/
+        img{
+            display: block;
+            width: 83px;
+            height: 83px;
+            margin: 0 auto;
+            margin-bottom: 1.5rem;
+        }
+        h3{
+            text-align: center;
+            color: $color-dark-red;
+            font-size: $font-size-m; //24
+            margin-bottom: 0.5rem;
+        }
+    }
+    @include pad{
+        justify-content: center;
+        li{
+            &:nth-child(odd){
+                margin-right: 15%; /*105px*/
+            }
+            &:nth-child(-n+2){
+                margin-bottom: 2rem;
+            }
+        }
+        
+    }
+    @include phone{
+        li{
+            margin-right: 0px;
+            &:nth-child(odd){
+                margin-right: 0px;
+            }
+            &:not(:last-child){
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+}
 
 .designer_1{
     background-image: url(../images/product-8.png);
@@ -78,7 +133,7 @@ body{
         height: 455px; /*auot?*/
         h3{
             opacity: 1;
-            color: $color-main;
+            color: $color-dark-red;
             font-size: 4.5rem;//72
         }
         @include pad{
