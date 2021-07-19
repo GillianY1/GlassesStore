@@ -1,23 +1,354 @@
-.header {
-  height: 200px;
-  background-color: #00cc99; }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
-.footer {
-  height: 200px;
-  background-color: #00cc99; }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* @include pad{} */
+/* add */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+.d-flex-c {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s; }
-  .box:hover {
-    width: 200px;
-    background-color: #00cc99; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.d-flex-sb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.mr-auto {
+  margin-right: auto; }
+
+.font-size-s {
+  font-size: 14px; }
+
+.font-24 {
+  font-size: 1.5rem; }
+
+.font-20 {
+  font-size: 1.25rem; }
+
+.font-48 {
+  font-size: 3rem; }
+
+.reset-btn {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none; }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #AA0601;
+  padding: 30px 4.6%;
+  font-size: 20px; }
+  .header h1 a {
+    background: url(../images/logo.png);
+    background-size: cover;
+    width: 80px;
+    height: 49px;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap; }
+  .header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .header ul li + li {
+      margin-left: 3rem; }
+    .header ul a {
+      color: white; }
+
+/*------------ pad -------------*/
+@media (max-width: 992px) {
+  .header {
+    padding: 30px 3.9%; }
+    .header li + li {
+      margin-left: 2.5rem; } }
+
+/*---------phone--------------*/
+@media (max-width: 767px) {
+  .header {
+    padding: 0; }
+    .header h1 {
+      width: 100%;
+      margin: 10px 0px; }
+      .header h1 a {
+        margin: 0px auto;
+        width: 48px;
+        height: 29.4px; }
+    .header ul {
+      width: 100%; }
+      .header ul li {
+        width: 50%;
+        text-align: center;
+        padding: 8px 0px;
+        border: white 1px solid; }
+      .header ul li + li {
+        margin-left: 0px; } }
+
+.footer {
+  background-color: #AA0601;
+  color: white;
+  padding: 2rem 0 2.5rem; }
+  .footer a {
+    color: white; }
+  .footer img {
+    display: block; }
+
+.footer-nav {
+  margin-bottom: 2rem; }
+
+.footer-nav-items li + li {
+  margin-left: 3rem; }
+
+.footer-media li + li {
+  margin-left: 2rem; }
+
+.footer-media-phone {
+  display: none; }
+
+.footer-contacts {
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  border-bottom: solid 1px #FBF2F2; }
+
+.footer-contacts-list {
+  font-size: 2rem; }
+  .footer-contacts-list li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .footer-contacts-list li img {
+      width: 2rem;
+      height: 2rem;
+      margin-right: 20px; }
+    .footer-contacts-list li + li {
+      margin-top: 1rem; }
+
+.service-doc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .service-doc a {
+    display: block;
+    font-size: 14px; }
+    .service-doc a:last-child {
+      margin-left: 3rem; }
+
+/*-------------pad-----------*/
+@media (max-width: 992px) {
+  .footer {
+    padding-bottom: 2rem; }
+  .footer-nav {
+    margin-bottom: 18px; }
+  .footer-nav-items li + li {
+    margin-left: 2.5rem; }
+  .footer-media li + li {
+    margin-left: 1.5rem; }
+  .footer-media img {
+    width: 1.5rem;
+    height: 1.5rem; }
+  .footer-contacts {
+    padding-bottom: 1.25rem;
+    margin-bottom: 1.5rem; }
+  .footer-contacts-list {
+    font-size: 20px; }
+    .footer-contacts-list li img {
+      width: 18px;
+      height: 18px;
+      margin-right: 10px; }
+    .footer-contacts-list li + li {
+      margin-top: 0.75rem; }
+  .service-doc a:last-child {
+    margin-left: 1.5rem; } }
+
+/*------------phone-----------*/
+@media (max-width: 767px) {
+  .footer {
+    padding: 1.5rem 0px; }
+  .footer-nav, .footer-media {
+    display: none; }
+  .footer-media-phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .footer-media-phone li + li {
+      margin-left: 1.5rem; }
+    .footer-media-phone img {
+      width: 1.5rem;
+      height: 1.5rem; }
+  .footer-contacts {
+    margin-bottom: 1rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start; }
+  .footer-contacts-list {
+    font-size: 1rem; }
+    .footer-contacts-list li img {
+      width: 1rem;
+      height: 1rem;
+      margin-right: 6.5px; }
+    .footer-contacts-list li + li {
+      margin-top: 6px; }
+  .service-doc p, .service-doc a {
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 0.5rem; }
+  .service-doc a:last-child {
+    margin: 0px; } }
+
+body {
+  line-height: 1.5; }
+
+.container {
+  max-width: 1010px;
+  margin: 0 auto;
+  font-family: "Roboto, sans-serif"; }
+  .container h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #AA0601; }
+  @media (max-width: 992px) {
+    .container {
+      width: 90%; } }
+  @media (max-width: 767px) {
+    .container {
+      width: 92%; } }
+
+.container-padding {
+  padding: 60px 0 80px 0; }
+  @media (max-width: 992px) {
+    .container-padding {
+      padding: 40px 0 54px 0; } }
+  @media (max-width: 767px) {
+    .container-padding {
+      padding: 30px 0 40px 0; } }
+
+.inform .submit {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+  padding: 1rem 143px;
+  background-color: #AA0601; }
+  .inform .submit:hover {
+    background-color: pink; }
 
 /*# sourceMappingURL=all.css.map */
