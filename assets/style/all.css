@@ -130,7 +130,7 @@ a {
   padding: 30px 4.6%;
   font-size: 20px; }
   .header h1 a {
-    background: url(./assets/images/logo.png);
+    background: url(../images/logo.png);
     background-size: cover;
     width: 80px;
     height: 49px;
