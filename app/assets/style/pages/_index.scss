@@ -1,6 +1,9 @@
 body{
     line-height: 1.5;
 }
+a{
+    text-decoration: none;
+}
 .container{
     max-width: 1110px; 
     margin: 0 auto;
@@ -13,6 +16,9 @@ body{
     }
     @include pad{
         width: 90%;//max-width:682px; //padding: 0 2.5rem; 
+        h2{
+            font-size: $font-size-l; //32px
+        }
     }
     @include phone{
         width: 92%;//max-width:345px; //padding: 0 1rem;
@@ -34,17 +40,14 @@ body{
 
 .banner{
     background-image: url(../images/banner.png);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
     height: 864px;
     padding-right: 21%;
     display: flex;
     justify-content:flex-end;
     align-items: center;
+    @include bg-img-center;
     @include pad{
         padding-right: 5%;
-
     }
     @include phone{
         background-image: url(../images/banner-sm.png);
@@ -105,7 +108,6 @@ body{
                 margin-bottom: 2rem;
             }
         }
-        
     }
     @include phone{
         li{
@@ -118,35 +120,175 @@ body{
             }
         }
     }
-
+}
+/*==================== classic serial=================*/
+.classic_serial{
+    h2{
+        margin-bottom: 2.5rem;
+        @include pad { margin-bottom: 2rem ;}
+        @include phone {margin-bottom: 1.25rem;}
+    }
+}
+.classic-list{
+    li {
+        a{
+            display: flex;
+            justify-content: center;
+        }
+        &:nth-child(even){
+            a{
+                flex-direction: row-reverse;
+                @include pad{
+                    flex-direction: row;
+                }
+            }
+            .serial-name{
+                justify-content: flex-end;
+                margin-left: 0rem;
+                margin-right: 2rem;
+                @include pad{
+                    margin-right: 0rem;
+                    margin-left: 2rem;
+                    justify-content: flex-start;
+                }
+            }
+        }
+        &+li{
+            margin-top: 2rem;
+            @include pad{
+                margin-top: 0.5rem;
+            }
+        }
+    }
+}
+.serial-img{
+    @include bg-img-center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 320px;
+    width: 57%;
+    @include pad{
+        height: 168px;
+    }
+    @include phone {
+        height: 134px;
+        width: 100%;
+    }
+}
+.serial-name{
+    width: 43%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 2rem;
+    @include phone {
+        display: none;
+    }
+    img{
+        margin-right: 10px;
+    }
+    h3{
+        font-size: $font-size-ll;
+        color: $color-main;
+        font-weight: bold;
+        @include pad {
+            font-size: 28px;
+        }
+    }
+}
+.serial-img-name{
+    display: none;
+    @include phone {
+        display: flex;
+    }
+    img{
+        height: 36px;
+        width: auto;
+    }
+    h3{
+        @include phone {
+            font-size: 28px;
+        }
+    }
+}
+/*===================classic serial=====================*/
+.classic-1{
+    background-image: url(../images/product-1.png);
+}
+.classic-2{
+    background-image: url(../images/product-2.png);
+}
+.classic-3{
+    background-image: url(../images/product-3.png);
 }
 
+/*================== desinger serail ===========================*/
+.desinger_serial{
+    background-image: url(../images/bg.png);
+    @include bg-img-center;
+    h2{
+        color: white;
+        margin-bottom: 2.5rem;
+    }
+}
+.designer-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li{
+        display: block;
+        position: relative;
+        width: 48.64%;
+        padding-top: 40.98%; /* 48.64 X 84.26% **/
+        /* height: 100%; why cannot assign height ??*/
+        @include pad{ width: 48.38%;}
+        @include phone{
+             width: 100%;
+             padding-top: 84.26%;
+             padding-bottom: 1rem;
+            }
+        h3{
+            position: absolute;
+            top:  50%;/*42.13%;*/
+            left: 50%; 
+            transform: translate(-50%, -50%);
+            color: $color-dark-red;
+            font-size: 4.5rem;//72
+            font-weight: 900;
+            z-index: 3;
+            @include pad{
+                font-size: $font-size-l;//32
+            }
+        }
+    }
+}
+.white-img{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    padding-top: 84.26%;
+    background-color: white;
+    z-index: 1;
+}
 .designer_1{
     background-image: url(../images/product-8.png);
 }
 .designer_2{
     background-image: url(../images/product-9.png);
 }
-.desinger_serial{
-    li{
-        width: 540px;
-        height: 455px; /*auot?*/
-        h3{
-            opacity: 1;
-            color: $color-dark-red;
-            font-size: 4.5rem;//72
-        }
-        @include pad{
-            width: 330px;
-            height: 278px;
-        }
-        @include phone{
-            width: 100%;/*345px;*/
-            height: auto;/*291px;*/
-        }
-    }
+.designer-img{
+    /*width: ;
+    height: */
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    padding-top: 84.26%;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: 2;
 }
-
 
 
 .inform{

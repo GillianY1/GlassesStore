@@ -31,6 +31,12 @@ $font-size-ll: 3rem; //48
 	}
 }
 
+@mixin bg-img-center {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 @mixin reset-btn{
     border: none;
     margin: 0;
