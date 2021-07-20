@@ -305,6 +305,9 @@ a {
 body {
   line-height: 1.5; }
 
+a {
+  text-decoration: none; }
+
 .container {
   max-width: 1110px;
   margin: 0 auto;
@@ -316,7 +319,9 @@ body {
     text-align: center; }
   @media (max-width: 992px) {
     .container {
-      width: 90%; } }
+      width: 90%; }
+      .container h2 {
+        font-size: 2rem; } }
   @media (max-width: 767px) {
     .container {
       width: 92%; }
@@ -334,9 +339,6 @@ body {
 
 .banner {
   background-image: url(../images/banner.png);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
   height: 864px;
   padding-right: 21%;
   display: -webkit-box;
@@ -347,7 +349,10 @@ body {
           justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; }
   @media (max-width: 992px) {
     .banner {
       padding-right: 5%; } }
@@ -418,30 +423,203 @@ body {
       .slogan-list li:not(:last-child) {
         margin-bottom: 2rem; } }
 
+/*==================== classic serial=================*/
+.classic_serial h2 {
+  margin-bottom: 2.5rem; }
+  @media (max-width: 992px) {
+    .classic_serial h2 {
+      margin-bottom: 2rem; } }
+  @media (max-width: 767px) {
+    .classic_serial h2 {
+      margin-bottom: 1.25rem; } }
+
+.classic-list li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.classic-list li:nth-child(even) a {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; }
+  @media (max-width: 992px) {
+    .classic-list li:nth-child(even) a {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
+
+.classic-list li:nth-child(even) .serial-name {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-left: 0rem;
+  margin-right: 2rem; }
+  @media (max-width: 992px) {
+    .classic-list li:nth-child(even) .serial-name {
+      margin-right: 0rem;
+      margin-left: 2rem;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; } }
+
+.classic-list li + li {
+  margin-top: 2rem; }
+  @media (max-width: 992px) {
+    .classic-list li + li {
+      margin-top: 0.5rem; } }
+
+.serial-img {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 320px;
+  width: 57%; }
+  @media (max-width: 992px) {
+    .serial-img {
+      height: 168px; } }
+  @media (max-width: 767px) {
+    .serial-img {
+      height: 134px;
+      width: 100%; } }
+
+.serial-name {
+  width: 43%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: 2rem; }
+  @media (max-width: 767px) {
+    .serial-name {
+      display: none; } }
+  .serial-name img {
+    margin-right: 10px; }
+  .serial-name h3 {
+    font-size: 3rem;
+    color: #AA0601;
+    font-weight: bold; }
+    @media (max-width: 992px) {
+      .serial-name h3 {
+        font-size: 28px; } }
+
+.serial-img-name {
+  display: none; }
+  @media (max-width: 767px) {
+    .serial-img-name {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+  .serial-img-name img {
+    height: 36px;
+    width: auto; }
+  @media (max-width: 767px) {
+    .serial-img-name h3 {
+      font-size: 28px; } }
+
+/*===================classic serial=====================*/
+.classic-1 {
+  background-image: url(../images/product-1.png); }
+
+.classic-2 {
+  background-image: url(../images/product-2.png); }
+
+.classic-3 {
+  background-image: url(../images/product-3.png); }
+
+/*================== desinger serail ===========================*/
+.desinger_serial {
+  background-image: url(../images/bg.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .desinger_serial h2 {
+    color: white;
+    margin-bottom: 2.5rem; }
+
+.designer-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .designer-list li {
+    display: block;
+    position: relative;
+    width: 48.64%;
+    padding-top: 40.98%;
+    /* 48.64 X 84.26% **/
+    /* height: 100%; why cannot assign height ??*/ }
+    @media (max-width: 992px) {
+      .designer-list li {
+        width: 48.38%; } }
+    @media (max-width: 767px) {
+      .designer-list li {
+        width: 100%;
+        padding-top: 84.26%;
+        padding-bottom: 1rem; } }
+    .designer-list li h3 {
+      position: absolute;
+      top: 50%;
+      /*42.13%;*/
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      color: #650300;
+      font-size: 4.5rem;
+      font-weight: 900;
+      z-index: 3; }
+      @media (max-width: 992px) {
+        .designer-list li h3 {
+          font-size: 2rem; } }
+
+.white-img {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  padding-top: 84.26%;
+  background-color: white;
+  z-index: 1; }
+
 .designer_1 {
   background-image: url(../images/product-8.png); }
 
 .designer_2 {
   background-image: url(../images/product-9.png); }
 
-.desinger_serial li {
-  width: 540px;
-  height: 455px;
-  /*auot?*/ }
-  .desinger_serial li h3 {
-    opacity: 1;
-    color: #650300;
-    font-size: 4.5rem; }
-  @media (max-width: 992px) {
-    .desinger_serial li {
-      width: 330px;
-      height: 278px; } }
-  @media (max-width: 767px) {
-    .desinger_serial li {
-      width: 100%;
-      /*345px;*/
-      height: auto;
-      /*291px;*/ } }
+.designer-img {
+  /*width: ;
+    height: */
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  padding-top: 84.26%;
+  background-size: cover;
+  opacity: 0.5;
+  z-index: 2; }
 
 .inform .submit {
   border: none;
