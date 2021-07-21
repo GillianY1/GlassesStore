@@ -595,6 +595,10 @@ a {
       @media (max-width: 992px) {
         .designer-list li h3 {
           font-size: 2rem; } }
+  .designer-list a:hover .designer-img {
+    opacity: 1; }
+  .designer-list a:hover h3 {
+    color: white; }
 
 .white-img {
   position: absolute;
@@ -621,26 +625,211 @@ a {
   opacity: 0.5;
   z-index: 2; }
 
-.inform .submit {
-  border: none;
-  margin: 0;
-  padding: 0;
-  width: auto;
-  overflow: visible;
-  background: transparent;
-  /* inherit font & color from ancestor */
-  color: inherit;
-  font: inherit;
-  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
-  line-height: normal;
-  /* Corrects font smoothing for webkit */
-  -webkit-font-smoothing: inherit;
-  -moz-osx-font-smoothing: inherit;
-  /* Corrects inability to style clickable `input` types in iOS */
-  -webkit-appearance: none;
-  padding: 1rem 143px;
-  background-color: #AA0601; }
-  .inform .submit:hover {
-    background-color: pink; }
+/* =============== recommand =============== */
+.recommand h2 {
+  margin-bottom: 2.5rem; }
+  @media (max-width: 992px) {
+    .recommand h2 {
+      margin-bottom: 2rem; } }
+  @media (max-width: 767px) {
+    .recommand h2 {
+      margin-bottom: 1.25rem; } }
+
+.recommand ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.recommand-card {
+  border-radius: 4px 5px 0px 0px;
+  -webkit-box-shadow: 0px 0px 6px #DEE2E6;
+          box-shadow: 0px 0px 6px #DEE2E6;
+  width: 23%;
+  height: 460px;
+  position: relative; }
+  @media (max-width: 992px) {
+    .recommand-card {
+      width: 48.39%; }
+      .recommand-card:nth-child(-n+2) {
+        margin-bottom: 2rem; } }
+  @media (max-width: 767px) {
+    .recommand-card {
+      width: 100%; }
+      .recommand-card:not(:last-child) {
+        margin-bottom: 1rem; } }
+
+.customer-img {
+  width: 100%;
+  height: 256px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+.recommand-content {
+  padding: 1rem; }
+  .recommand-content > h4 {
+    margin-bottom: 0.5rem; }
+  .recommand-content h4 {
+    font-size: 14px; }
+
+.date {
+  color: #707070;
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem; }
+
+.customer-1 {
+  background-image: url(../images/rec-1.png); }
+
+.customer-2 {
+  background-image: url(../images/rec-2.png); }
+
+.customer-3 {
+  background-image: url(../images/rec-3.png); }
+
+.customer-4 {
+  background-image: url(../images/rec-4.png); }
+
+/*==================inform =========================*/
+.inform {
+  background-color: #FBF2F2; }
+
+.inform-container {
+  max-width: 730px;
+  /* 38%;*/
+  /*66.36%;*/ }
+  @media (max-width: 992px) {
+    .inform-container {
+      width: 58.6%; } }
+  @media (max-width: 767px) {
+    .inform-container {
+      width: 92%; } }
+  .inform-container h2 {
+    color: #000;
+    margin-bottom: 1.5rem; }
+  .inform-container .submit {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+    padding: 1rem 143px;
+    background-color: #AA0601;
+    display: block;
+    margin: 0 auto;
+    color: white; }
+    .inform-container .submit:hover {
+      background-color: pink;
+      color: #650300; }
+  .inform-container label {
+    margin-bottom: 4px; }
+    @media (max-width: 992px) {
+      .inform-container label {
+        font-size: 14px; } }
+  .inform-container ul {
+    margin-bottom: 2.5rem; }
+    @media (max-width: 992px) {
+      .inform-container ul {
+        margin-bottom: 1.25rem; } }
+  .inform-container li:not(:last-child) {
+    margin-bottom: 1rem; }
+    @media (max-width: 992px) {
+      .inform-container li:not(:last-child) {
+        margin-bottom: 0.5rem; } }
+  .inform-container textarea {
+    border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+    /*remove the resize handle on the bottom right*/
+    height: 136px; }
+    .inform-container textarea::-webkit-input-placeholder {
+      opacity: 0.2; }
+    .inform-container textarea::-moz-placeholder {
+      opacity: 0.2; }
+    .inform-container textarea:-ms-input-placeholder {
+      opacity: 0.2; }
+    .inform-container textarea::-ms-input-placeholder {
+      opacity: 0.2; }
+    .inform-container textarea::placeholder {
+      opacity: 0.2; }
+    @media (max-width: 992px) {
+      .inform-container textarea {
+        height: 100px; } }
+  .inform-container input[type=text], .inform-container textarea {
+    display: block;
+    width: 100%;
+    background-color: #FBF2F2;
+    border: 1px solid black;
+    padding: 8px 12px; }
+    .inform-container input[type=text]::-webkit-input-placeholder, .inform-container textarea::-webkit-input-placeholder {
+      opacity: 0.2; }
+    .inform-container input[type=text]::-moz-placeholder, .inform-container textarea::-moz-placeholder {
+      opacity: 0.2; }
+    .inform-container input[type=text]:-ms-input-placeholder, .inform-container textarea:-ms-input-placeholder {
+      opacity: 0.2; }
+    .inform-container input[type=text]::-ms-input-placeholder, .inform-container textarea::-ms-input-placeholder {
+      opacity: 0.2; }
+    .inform-container input[type=text]::placeholder, .inform-container textarea::placeholder {
+      opacity: 0.2; }
+
+.inform-desc {
+  margin-bottom: 1.25rem; }
+  @media (max-width: 992px) {
+    .inform-desc {
+      margin-bottom: 1rem; } }
+  @media (max-width: 767px) {
+    .inform-desc {
+      margin-bottom: rem; } }
+
+.contact-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  .contact-checkbox input {
+    visibility: hidden; }
+  .contact-checkbox label {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid black;
+    background-color: #FBF2F2;
+    margin: 4px;
+    margin-right: 8px; }
+    @media (max-width: 992px) {
+      .contact-checkbox label {
+        width: 14px;
+        height: 14px;
+        margin: 1.75px;
+        margin-right: 4px; } }
+  .contact-checkbox p {
+    font-size: 1rem; }
+    @media (max-width: 992px) {
+      .contact-checkbox p {
+        font-size: 14px; } }
 
 /*# sourceMappingURL=all.css.map */
