@@ -6,6 +6,8 @@ $color-main: #AA0601;
 $color-sec:  #FBF2F2;
 $color-dark-red: #650300;
 $color-dark: #111619;
+$color-shadow :#DEE2E6;
+$color-gray : #707070;
 
 $font-family-main: 'Roboto, sans-serif';
 $font-family-sec: 'Noto Sans, sans-serif';
@@ -35,6 +37,17 @@ $font-size-ll: 3rem; //48
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+@mixin textarea-reset{
+    border: none;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    resize: none; /*remove the resize handle on the bottom right*/
 }
 
 @mixin reset-btn{

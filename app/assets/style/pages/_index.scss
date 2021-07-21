@@ -261,6 +261,14 @@ a{
             @include pad{
                 font-size: $font-size-l;//32
             }
+        }   
+    }
+    a:hover{
+        .designer-img{
+            opacity: 1;
+        }
+        h3{
+            color: white;
         }
     }
 }
@@ -289,15 +297,160 @@ a{
     opacity: 0.5;
     z-index: 2;
 }
+/* =============== recommand =============== */
+.recommand{
+    h2 {
+        margin-bottom: 2.5rem;
+        @include pad {margin-bottom: 2rem;}
+        @include phone {margin-bottom: 1.25rem;}
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+.recommand-card{
+    border-radius: 4px 5px 0px 0px;
+    box-shadow: 0px 0px 6px $color-shadow;
+    width: 23%;
+    height: 460px;
+    position: relative;
+    @include pad {  
+        width: 48.39%;
+        &:nth-child(-n+2){
+            margin-bottom: 2rem;
+        }
+    }
+    @include phone {
+          width: 100%;
+          &:not(:last-child){
+            margin-bottom: 1rem;
+        }
+    }  
+}
+.customer-img{
+    width: 100%;
+    height: 256px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 
-
+.recommand-content{
+    padding: 1rem ;
+    >h4{
+        margin-bottom: 0.5rem;
+    }
+    h4 {
+        font-size: $font-size-s;
+    }
+}
+.date{
+    color: $color-gray;
+    position: absolute;
+    left:1rem;
+    bottom:1rem;
+}
+.customer-1{
+    background-image: url(../images/rec-1.png);
+}
+.customer-2{
+    background-image: url(../images/rec-2.png);
+}
+.customer-3{
+    background-image: url(../images/rec-3.png);
+}
+.customer-4{
+    background-image: url(../images/rec-4.png);
+}
+/*==================inform =========================*/
 .inform{
+    background-color: $color-sec;
+}
+.inform-container{
+    max-width: 730px;/* 38%;*//*66.36%;*/
+    @include pad{ width: 58.6%/*70%;*/}
+    @include phone{ width: 92%;}
+
+    h2{
+        color: #000;
+        margin-bottom: 1.5rem;
+    }
     .submit{
         @include reset-btn;
         padding: 1rem 143px;  
         background-color: $color-main;
+        display: block;
+        margin: 0 auto;
+        color: white;
         &:hover{
             background-color: pink;
+            color: $color-dark-red;
         }
+    }
+    label{
+        margin-bottom: 4px;
+        @include pad{ font-size: $font-size-s;}
+    }
+    ul{
+        margin-bottom: 2.5rem;
+        @include pad{ margin-bottom: 1.25rem;}
+    }
+    li:not(:last-child){
+         margin-bottom: 1rem;
+         @include pad{ margin-bottom: 0.5rem;}
+    }
+    textarea{
+        @include textarea-reset;
+        height: 136px;
+        &::placeholder {
+            opacity: 0.2;
+        }
+        @include pad{
+            height: 100px;
+        }
+    }
+    input[type=text], textarea{
+        display: block;
+        width: 100%;
+        background-color: $color-sec;
+        border: 1px solid black;
+        padding: 8px 12px;
+        &::placeholder {
+            opacity: 0.2;
+        }
+    }
+}
+.inform-desc{
+        margin-bottom: 1.25rem;
+        @include pad{ margin-bottom: 1rem;}
+        @include phone{ margin-bottom: rem;}
+}
+.contact-checkbox{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    input{
+        visibility: hidden;
+    }
+    label{
+        display: block;
+        width: 1rem;
+        height: 1rem;
+        border: 2px solid black;
+        background-color: $color-sec;
+        margin: 4px ;
+        margin-right: 8px;
+        @include pad{
+            width: $font-size-s;
+            height: $font-size-s;
+            margin: 1.75px;
+            margin-right: 4px;
+         }
+    }
+    p{
+        font-size: 1rem;
+        @include pad{ font-size: $font-size-s;}
     }
 }
