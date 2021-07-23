@@ -46,7 +46,6 @@ table {
   border-spacing: 0; }
 
 /* @include pad{} */
-/* add */
 img {
   max-width: 100%;
   height: auto;
@@ -337,6 +336,7 @@ a {
     .container-padding {
       padding: 30px 0 40px 0; } }
 
+/*============== banner==================*/
 .banner {
   background-image: url(../images/banner.png);
   height: 864px;
@@ -831,5 +831,8 @@ a {
     @media (max-width: 992px) {
       .contact-checkbox p {
         font-size: 14px; } }
+
+.serial-header {
+  background-color: pink; }
 
 /*# sourceMappingURL=all.css.map */
