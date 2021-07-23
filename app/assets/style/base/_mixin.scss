@@ -1,25 +1,3 @@
-
-$pad-width: 992px;
-$phone-width: 767px;
-
-$color-main: #AA0601;
-$color-sec:  #FBF2F2;
-$color-dark-red: #650300;
-$color-dark: #111619;
-$color-shadow :#DEE2E6;
-$color-gray : #707070;
-
-$font-family-main: 'Roboto, sans-serif';
-$font-family-sec: 'Noto Sans, sans-serif';
-
-$font-size-s: 14px;
-$font-size-sm :20px;
-$font-size-m: 1.5rem;//24px;
-$font-size-l: 2rem; //32
-$font-size-ll: 3rem; //48
-
-
-
 /* @include pad{} */
 @mixin pad{
 	@media (max-width:992px){

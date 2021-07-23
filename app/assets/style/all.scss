@@ -1,4 +1,5 @@
 @import "base/reset";
+@import "base/variable";
 @import "base/mixin";
 @import "base/basic";
 @import "layout/header";
@@ -6,5 +7,6 @@
 @import "layout/footer";
 @import "components/module";
 @import "pages/index";
+@import "pages/serial";
 
 
