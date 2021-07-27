@@ -301,6 +301,27 @@ a {
   .service-doc a:last-child {
     margin: 0px; } }
 
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .pagination li a {
+    display: block;
+    border: 1px solid #555555;
+    border-left-width: 0px;
+    color: #555555;
+    padding: 12px 16px;
+    font-size: 18px; }
+    .pagination li a:hover {
+      background-color: #FBF2F2; }
+  .pagination li:first-child > a {
+    border-left-width: 1px; }
+  .pagination li:last-child > a {
+    background-color: #F2F2F2; }
+
 body {
   line-height: 1.5; }
 
@@ -832,7 +853,64 @@ a {
       .contact-checkbox p {
         font-size: 14px; } }
 
-.serial-header {
-  background-color: pink; }
+.serial-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Roboto, sans-serif"; }
+  .serial-list li {
+    width: 33.33%;
+    border-right: 1px solid #DCDCDC; }
+    .serial-list li:first-child {
+      border-left: 1px solid #DCDCDC; }
+    .serial-list li.active {
+      border-bottom: 8px solid #AA0601; }
+  .serial-list a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 26px 0; }
+    .serial-list a:hover {
+      background-color: #FBF2F2; }
+  .serial-list img {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px; }
+  .serial-list h4 {
+    font-size: 2rem;
+    color: black; }
+
+.serial-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.serial-banner-item {
+  width: 50%;
+  height: 304px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  @media (max-width: 767px) {
+    .serial-banner-item {
+      height: 148px; } }
+
+.serial-banner-item1 {
+  background-image: url(../images/banner-1.png); }
+
+.serial-banner-item2 {
+  background-image: url(../images/banner-2.png); }
+
+.serial-content {
+  padding-bottom: 160px; }
+
+.opt-content h3 {
+  text-align: center; }
 
 /*# sourceMappingURL=all.css.map */
