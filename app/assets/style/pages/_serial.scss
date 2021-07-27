@@ -1,0 +1,67 @@
+.serial-header{
+
+  
+}
+
+
+.serial-list{
+    display: flex;
+    justify-content: center;
+    font-family: $font-family-main;
+    li{
+        width: 33.33%;
+        border-right: 1px solid $color-banner-border;
+        &:first-child{
+            border-left: 1px solid $color-banner-border;
+        }
+        &.active{
+            border-bottom: 8px solid $color-main;
+        }
+    }
+    a{
+        display: flex;
+        justify-content: center;
+        padding: 26px 0;
+        &:hover{
+            background-color: $color-sec ;
+        }
+    }
+    img{
+        width: 44px;
+        height: 44px;
+        margin-right: 10px;
+    }
+    h4{
+        font-size: $font-size-l;
+        color: black;
+    }
+}
+
+.serial-banner{
+    display: flex;
+}
+.serial-banner-item{
+    width: 50%;
+    height: 304px;
+    @include bg-img-center;
+    @include phone{
+        height: 148px;
+    }
+}
+.serial-banner-item1{
+    background-image: url(../images/banner-1.png);
+}
+.serial-banner-item2{
+    background-image: url(../images/banner-2.png);
+}
+
+.serial-content{
+    padding-bottom: 160px;
+}
+
+.opt-content{
+    h3{
+        text-align: center;
+
+    }
+}
