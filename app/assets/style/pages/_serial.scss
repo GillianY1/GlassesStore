@@ -25,20 +25,38 @@
         &:hover{
             background-color: $color-sec ;
         }
+        @include pad{ padding: 14px 0;}
+        @include phone{ padding: 6px 0;}
     }
     img{
         width: 44px;
         height: 44px;
         margin-right: 10px;
+        @include pad{
+            width: 30px;
+            height: 30px;
+        }
+        @include phone{
+            width: 16px;
+            height: 16px;
+            margin-right: 3px;
+        }
     }
     h4{
         font-size: $font-size-l;
         color: black;
+        @include pad{
+            font-size: $font-size-m; //24
+        }
+        @include phone{
+            font-size: $font-size-s; //14
+        }
     }
 }
 
 .serial-banner{
     display: flex;
+    margin-bottom: 80px;
 }
 .serial-banner-item{
     width: 50%;
@@ -57,11 +75,80 @@
 
 .serial-content{
     padding-bottom: 160px;
+    @include pad{ padding-bottom: 96px;}
+    @include phone{ padding-bottom: 56px;}
 }
 
 .opt-content{
+    color: black;
+    h2{
+        font-size: 42px;
+        color: black;
+    }
     h3{
         text-align: center;
-
+        font-size: $font-size-l;
+        margin-bottom: 40px;
     }
+}
+.opt-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 96px;
+    @include pad{ margin-bottom: 72px;}
+    @include phone{ margin-bottom: 40px;}
+    .opt-product-card{
+        width: calc((100% - 90px)/4);
+        margin-left: 30px;
+        &:nth-child(4n+1){
+            margin-left: 0px;
+        } 
+        &:not(:nth-last-child(-n+4)){
+            margin-bottom: 104px;
+            @include pad{ margin-bottom: 72px;}
+            @include phone{  margin-bottom: 32px; }
+        }
+        @include pad{
+            width: calc((100% - 30px)/2);  
+            &:nth-child(2n-1){
+                margin-left: 0px;
+            }
+            margin-bottom: 72px;
+        }
+        @include phone(){
+            width: 100%;
+            margin: 0px;
+            margin-bottom: 32px;
+            &:nth-child(2n){margin-left: 0;}
+        }  
+    }
+    img{
+        max-width: none;
+        width: 100%;
+    }
+}
+.opt-detial{
+    display: flex;
+    justify-content: space-between;
+    font-size: $font-size-m;
+}
+.opt-price{
+    color: $color-main ;
+}
+.opt-color-list{
+    display: flex;
+    justify-content: flex-start;
+    .opt-color{
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+    }
+}
+
+.opt-color-1{
+    background-color: $product-color-brown;
+}
+.opt-color-2{
+    background-color: $product-color-orange;
 }
