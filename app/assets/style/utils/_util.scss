@@ -1,34 +1,36 @@
-/* @include pad{} */
-@mixin pad{
-	@media (max-width:992px){
-		@content
-	}
+
+.d-flex-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
 }
-
-@mixin phone{
-	@media (max-width:767px){
-		@content
-	}
+.d-flex-sb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-@mixin bg-img-center {
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.mr-auto{
+    margin-right:auto;
 }
-@mixin textarea-reset{
-    border: none;
-    overflow: auto;
-    outline: none;
+.mb-1{}
+.mb-2{}
+.mb-3{}
+.mb-4{}
+.mb-5{}
+.mb-6{}
 
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
 
-    resize: none; /*remove the resize handle on the bottom right*/
-}
 
-@mixin reset-btn{
+
+.font-s {font-size: $font-s;} //14
+.font-n {font-size: $font-n;} //16
+.font-sm {font-size: $font-sm;} //20
+.font-m {font-size: $font-m;} //24
+.font-l {font-size: $font-l;} //32
+.font-ll {font-size: $font-ll;} //48 
+
+
+.reset-btn{
     border: none;
     margin: 0;
     padding: 0;
@@ -51,4 +53,3 @@
     /* Corrects inability to style clickable `input` types in iOS */
     -webkit-appearance: none;
 }
-

@@ -25,7 +25,7 @@
     border-bottom: solid 1px $color-sec;
 }
 .footer-contacts-list{
-    font-size: $font-size-l; //32
+    font-size: $font-l; //32
     li {
         display: flex;
         align-items: center;
@@ -45,7 +45,7 @@
     flex-wrap: wrap;
     a{
         display: block;
-        font-size: $font-size-s;
+        font-size: $font-s;
         &:last-child{
             margin-left: 3rem;
         }
@@ -76,7 +76,7 @@
         margin-bottom: 1.5rem;
     }
     .footer-contacts-list{
-        font-size: $font-size-sm; //20
+        font-size: $font-sm; //20
         li {
             img{
                 width: 18px; 
@@ -134,7 +134,7 @@
     .service-doc{
         p,a{
             width: 100%;
-            font-size: $font-size-s;
+            font-size: $font-s;
             margin-bottom: 0.5rem;
         }
         a:last-child {
