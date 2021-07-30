@@ -1,24 +1,42 @@
-
+.d-none{
+    display: none;
+}
+.d-flex{
+    display: flex;
+}
 .d-flex-c{
     display: flex;
     justify-content: center;
     align-items: center;  
+    flex-wrap: wrap; //added
 }
 .d-flex-sb{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; //added
 }
+.d-flex-s{
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.m-0-a{ margin: 0 auto;}
 .mr-auto{
     margin-right:auto;
 }
+.mr-10{margin-right: 10px;}
+
+.mb-40{margin-bottom: 40px;}
+.mb-80{margin-bottom: 80px;}
 .mb-1{}
 .mb-2{}
 .mb-3{}
 .mb-4{}
 .mb-5{}
 .mb-6{}
-
+// px-0 ,py-0....px-1 , py-1
 
 
 
@@ -28,7 +46,14 @@
 .font-m {font-size: $font-m;} //24
 .font-l {font-size: $font-l;} //32
 .font-ll {font-size: $font-ll;} //48 
+.font-42 {font-size: 42px;}
 
+.font-w-light {font-weight: 300;}
+.font-w-normal {font-weight: normal;}
+.font-w-bold {font-weight: bold;}
+
+.text-a-c {text-align: center;}
+.bg-img-center{ @include bg-img-center;}
 
 .reset-btn{
     border: none;

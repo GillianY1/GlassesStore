@@ -1,7 +1,5 @@
 /* serial nav */
 .serial-list{
-    display: flex;
-    justify-content: center;
     font-family: $font-family-main;
     li{
         display: block;
@@ -18,8 +16,6 @@
         }
     }
     a{
-        display: flex;
-        justify-content: center;
         padding: 26px 0 18px 0; // 26-8 broder = 18
         &:hover{
             background-color: $color-sec ;
@@ -30,7 +26,6 @@
     img{
         width: 44px;
         height: 44px;
-        margin-right: 10px;
         @include pad{
             width: 30px;
             height: 30px;
@@ -43,7 +38,6 @@
     }
     h4{
         font-size: $font-l;
-        font-weight: bold;
         color: black;
         @include pad{
             font-size: $font-m; //24
@@ -54,30 +48,27 @@
     }
 }
 /* seiral banner */
-.serial-banner{
-    display: flex;
-    margin-bottom: 80px;
+.serial-banner{ //flex //mb80
     @include pad{  margin-bottom: 56px;}
     @include phone{ margin-bottom: 32px;}
 }
 .serial-banner-item{
     width: 50%;
     height: 304px;
-    @include bg-img-center;
     @include phone{
         height: 148px;
     }
 }
-.serial-banner-optical1{
+.serial-banner-opt1{
     background-image: url(../images/banner-1.png);
 }
-.serial-banner-optical2{
+.serial-banner-opt2{
     background-image: url(../images/banner-2.png);
 }
-.serial-banner-sunglasses1{
+.serial-banner-sun1{
     background-image: url(../images/banner-3.png);
 }
-.serial-banner-sunglasses2{
+.serial-banner-sun2{
     background-image: url(../images/product-2-color.png);
 }
 
@@ -90,59 +81,45 @@
 .seiral-inner-content{
     color: black;
     h2{
-        font-size: 42px;
         color: black;
         @include pad{ font-size: $font-l;} //32
         @include phone{ font-size: $font-sm;} //20
     }
     h3{
         text-align: center;
-        font-size: $font-l;
-        margin-bottom: 40px;
         @include pad{ 
             font-size: $font-m; //24
             margin-bottom: 32px;
         } 
         @include phone{ 
-            font-size: 1rem;
+            font-size: $font-n;
             margin-bottom: 20px;
         } 
     }
 }
 /* ---- product card----- */
-.product-list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.product-list{ //with d-flex-sb'
     gap: 30px;
 }
 .product-detial{
-    display: flex;
-    justify-content: space-between;
-    font-size: $font-m; //24
     @include phone{ font-size: 1rem;}
 }
 .product-price{
     font-weight: bold;
     color: $color-main ;
 }
-.product-color-list{
-    display: flex;
-    justify-content: flex-start;
-    .product-color{
-        width: 24px;
-        height: 24px;
-        margin-right: 8px;
-        border-radius: 4px;
-        @include phone{ 
-            width: 1rem; height:1rem;
-            margin-right: 4px;
-        }
+
+.product-color{
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    border-radius: 4px;
+    @include phone{ 
+        width: 1rem; height:1rem;
+        margin-right: 4px;
     }
 }
-.product-img{
-    @include bg-img-center;
-}
+
 .product-color-1{
     background-color: $product-color-brown;
 }
@@ -159,8 +136,6 @@
         width: calc((100% - 90px)/4);
         &:not(:nth-last-child(-n+4)){ //not-last 4 child
             margin-bottom: 104px;
-            @include pad{ margin-bottom: 72px;}
-            @include phone{  margin-bottom: 32px; }
         }
         @include pad{
             width: calc((100% - 30px)/2); 
@@ -228,8 +203,6 @@
         width: calc((100% - 60px)/3);
         &:not(:nth-last-child(-n+3)){ //not-last 3 child
             margin-bottom: 104px;
-            @include pad{ margin-bottom: 72px;}
-            @include phone{  margin-bottom: 32px; }
         }
         @include pad{
             width: calc((100% - 30px)/2); 
