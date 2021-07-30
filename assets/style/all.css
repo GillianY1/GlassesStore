@@ -55,6 +55,9 @@ img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+body {
+  line-height: 1.5; }
+
 a {
   text-decoration: none; }
 
@@ -83,16 +86,22 @@ a {
 .mr-auto {
   margin-right: auto; }
 
-.font-size-s {
+.font-s {
   font-size: 14px; }
 
-.font-24 {
+.font-n {
+  font-size: 16px; }
+
+.font-sm {
+  font-size: 20px; }
+
+.font-m {
   font-size: 1.5rem; }
 
-.font-20 {
-  font-size: 1.25rem; }
+.font-l {
+  font-size: 2rem; }
 
-.font-48 {
+.font-ll {
   font-size: 3rem; }
 
 .reset-btn {
@@ -112,6 +121,29 @@ a {
   -moz-osx-font-smoothing: inherit;
   /* Corrects inability to style clickable `input` types in iOS */
   -webkit-appearance: none; }
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .pagination li a {
+    display: block;
+    border: 1px solid #555555;
+    border-left-width: 0px;
+    color: #555555;
+    padding: 10px 16px;
+    font-size: 18px; }
+    .pagination li a:hover {
+      background-color: #FBF2F2; }
+  .pagination li:first-child > a {
+    border-left-width: 1px;
+    padding: 10px 12px; }
+  .pagination li:last-child > a {
+    background-color: #F2F2F2;
+    padding: 10px 12px; }
 
 .header {
   display: -webkit-box;
@@ -300,35 +332,6 @@ a {
     margin-bottom: 0.5rem; }
   .service-doc a:last-child {
     margin: 0px; } }
-
-.pagination {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .pagination li a {
-    display: block;
-    border: 1px solid #555555;
-    border-left-width: 0px;
-    color: #555555;
-    padding: 10px 16px;
-    font-size: 18px; }
-    .pagination li a:hover {
-      background-color: #FBF2F2; }
-  .pagination li:first-child > a {
-    border-left-width: 1px;
-    padding: 10px 12px; }
-  .pagination li:last-child > a {
-    background-color: #F2F2F2;
-    padding: 10px 12px; }
-
-body {
-  line-height: 1.5; }
-
-a {
-  text-decoration: none; }
 
 .container {
   max-width: 1110px;
@@ -993,9 +996,8 @@ a {
       flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
-  .product-list .product-card {
-    margin-left: 30px; }
+          justify-content: center;
+  gap: 30px; }
 
 .product-detial {
   display: -webkit-box;
@@ -1053,8 +1055,6 @@ a {
       margin-bottom: 40px; } }
   .opt-list .opt-card {
     width: calc((100% - 90px)/4); }
-    .opt-list .opt-card:nth-child(4n+1) {
-      margin-left: 0px; }
     .opt-list .opt-card:not(:nth-last-child(-n+4)) {
       margin-bottom: 104px; }
       @media (max-width: 992px) {
@@ -1067,8 +1067,6 @@ a {
       .opt-list .opt-card {
         width: calc((100% - 30px)/2);
         margin-bottom: 0px; }
-        .opt-list .opt-card:nth-child(2n-1) {
-          margin-left: 0px; }
         .opt-list .opt-card:not(:nth-last-child(-n+2)) {
           margin-bottom: 65px; } }
     @media (max-width: 767px) {
@@ -1076,9 +1074,7 @@ a {
         width: 100%;
         margin: 0px; }
         .opt-list .opt-card:not(:nth-last-child(1)) {
-          margin-bottom: 32px; }
-        .opt-list .opt-card:nth-child(2n) {
-          margin-left: 0; } }
+          margin-bottom: 32px; } }
 
 .opt-img {
   height: 164px; }
@@ -1129,11 +1125,6 @@ a {
 
 .sun-list .sun-card {
   width: calc((100% - 60px)/3); }
-  .sun-list .sun-card:nth-child(3n+1) {
-    margin-left: 0px; }
-    @media (max-width: 992px) {
-      .sun-list .sun-card:nth-child(3n+1) {
-        margin-left: 30px; } }
   .sun-list .sun-card:not(:nth-last-child(-n+3)) {
     margin-bottom: 104px; }
     @media (max-width: 992px) {
@@ -1146,8 +1137,6 @@ a {
     .sun-list .sun-card {
       width: calc((100% - 30px)/2);
       margin-bottom: 0px; }
-      .sun-list .sun-card:nth-child(2n-1) {
-        margin-left: 0px; }
       .sun-list .sun-card:not(:nth-last-child(-n+2)) {
         margin-bottom: 72px; } }
   @media (max-width: 767px) {
@@ -1155,9 +1144,7 @@ a {
       width: 100%;
       margin: 0px; }
       .sun-list .sun-card:not(:nth-last-child(1)) {
-        margin-bottom: 32px; }
-      .sun-list .sun-card:nth-child(2n) {
-        margin-left: 0; } }
+        margin-bottom: 32px; } }
 
 .sun-img {
   height: 224px; }
