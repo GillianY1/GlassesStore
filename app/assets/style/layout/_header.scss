@@ -22,6 +22,10 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        li{
+            margin-right: -1px;
+            margin-bottom: -1px;
+        }
         li+li{
             margin-left: 3rem;
         }

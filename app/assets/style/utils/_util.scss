@@ -1,9 +1,5 @@
-.d-none{
-    display: none;
-}
-.d-flex{
-    display: flex;
-}
+.d-none{ display: none; }
+.d-flex{ display: flex; }
 .d-flex-c{
     display: flex;
     justify-content: center;
@@ -21,7 +17,6 @@
     justify-content: flex-start;
 }
 
-
 .m-0-a{ margin: 0 auto;}
 .mr-auto{
     margin-right:auto;
@@ -30,15 +25,14 @@
 
 .mb-40{margin-bottom: 40px;}
 .mb-80{margin-bottom: 80px;}
-.mb-1{}
+/*.mb-1{}
 .mb-2{}
 .mb-3{}
 .mb-4{}
 .mb-5{}
 .mb-6{}
-// px-0 ,py-0....px-1 , py-1
-
-
+ px-0 ,py-0....px-1 , py-1
+*/
 
 .font-s {font-size: $font-s;} //14
 .font-n {font-size: $font-n;} //16
@@ -51,8 +45,15 @@
 .font-w-light {font-weight: 300;}
 .font-w-normal {font-weight: normal;}
 .font-w-bold {font-weight: bold;}
+    
+    
+.font-family-main{ font-family: $font-family-main;} //ROBOT
+.font-family-sec{ font-family: $font-family-sec ;}
+
 
 .text-a-c {text-align: center;}
+.text-upper {text-transform:uppercase;}
+.text-nowrap{ white-space: nowrap; }
 .bg-img-center{ @include bg-img-center;}
 
 .reset-btn{
@@ -77,4 +78,4 @@
 
     /* Corrects inability to style clickable `input` types in iOS */
     -webkit-appearance: none;
-}
+} 

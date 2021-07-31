@@ -2,7 +2,7 @@
 .container{
     max-width: 1110px; 
     margin: 0 auto;
-    font-family: $font-family-main;
+    /*font-family: $font-family-main;*/
     h2{
         font-size: 3rem;
         font-weight: 800;
@@ -76,9 +76,10 @@
 .slogan-list{
     display: flex;
     justify-content: space-between;
+    /*gap: 30px;*/
     flex-wrap: wrap;
     li{
-        width: 255px;/*23%;*/
+        width:22%; /*255px;*/
         img{
             display: block;
             width: 83px;
@@ -95,7 +96,9 @@
     }
     @include pad{
         justify-content: center;
+        
         li{
+            width:42.5%;
             &:nth-child(odd){
                 margin-right: 15%; /*105px*/
             }
@@ -106,6 +109,7 @@
     }
     @include phone{
         li{
+            width:100%;
             margin-right: 0px;
             &:nth-child(odd){
                 margin-right: 0px;
@@ -228,7 +232,7 @@
     }
 }
 .designer-list{
-    width: 100%;
+    /*width: 100%;*/
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -267,14 +271,14 @@
         }
     }
 }
-.white-img{
+/*.white-img{
     position: absolute;
     top: 0px;
     width: 100%;
     padding-top: 84.26%;
     background-color: white;
     z-index: 1;
-}
+}*/
 .designer_1{
     background-image: url(../images/product-8.png);
 }
@@ -282,14 +286,13 @@
     background-image: url(../images/product-9.png);
 }
 .designer-img{
-    /*width: ;
-    height: */
     position: absolute;
     top: 0px;
     width: 100%;
     padding-top: 84.26%;
     background-size: cover;
-    opacity: 0.5;
+    background-color: rgba(255, 255, 255, 0.5); 
+    background-blend-mode: overlay;
     z-index: 2;
 }
 /* =============== recommand =============== */
@@ -373,12 +376,15 @@
         margin-bottom: 1.5rem;
     }
     .submit{
-        @include reset-btn;
-        padding: 1rem 143px;  
+       /* @include reset-btn;*/
+        width: 50%;
+        padding: 1rem 0; 
+        border: 0px ; 
         background-color: $color-main;
         display: block;
         margin: 0 auto;
         color: white;
+        cursor: pointer; 
         &:hover{
             background-color: pink;
             color: $color-dark-red;
