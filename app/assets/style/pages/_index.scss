@@ -291,7 +291,7 @@
     width: 100%;
     padding-top: 84.26%;
     background-size: cover;
-    background-color: rgba(255, 255, 255, 0.5); 
+    background-color: rgba(255, 255, 255, 0.5);  /* add  blend mode*/
     background-blend-mode: overlay;
     z-index: 2;
 }
