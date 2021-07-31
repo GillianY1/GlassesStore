@@ -56,7 +56,7 @@ img {
           box-sizing: border-box; }
 
 body {
-  font-family: 'Robot','Noto Sans TC' sans-serif;
+  font-family: 'Robot','Noto Sans TC', sans-serif;
   line-height: 1.5; }
 
 a {
@@ -119,6 +119,14 @@ a {
 .mb-80 {
   margin-bottom: 80px; }
 
+/*.mb-1{}
+.mb-2{}
+.mb-3{}
+.mb-4{}
+.mb-5{}
+.mb-6{}
+ px-0 ,py-0....px-1 , py-1
+*/
 .font-s {
   font-size: 14px; }
 
@@ -149,8 +157,20 @@ a {
 .font-w-bold {
   font-weight: bold; }
 
+.font-family-main {
+  font-family: "Roboto"; }
+
+.font-family-sec {
+  font-family: "Noto Sans"; }
+
 .text-a-c {
   text-align: center; }
+
+.text-upper {
+  text-transform: uppercase; }
+
+.text-nowrap {
+  white-space: nowrap; }
 
 .bg-img-center {
   background-position: center center;
@@ -231,6 +251,9 @@ a {
             justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
+    .header ul li {
+      margin-right: -1px;
+      margin-bottom: -1px; }
     .header ul li + li {
       margin-left: 3rem; }
     .header ul a {
@@ -389,7 +412,7 @@ a {
 .container {
   max-width: 1110px;
   margin: 0 auto;
-  font-family: "Roboto, sans-serif"; }
+  /*font-family: $font-family-main;*/ }
   .container h2 {
     font-size: 3rem;
     font-weight: 800;
@@ -468,11 +491,12 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  /*gap: 30px;*/
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .slogan-list li {
-    width: 255px;
-    /*23%;*/ }
+    width: 22%;
+    /*255px;*/ }
     .slogan-list li img {
       display: block;
       width: 83px;
@@ -489,13 +513,16 @@ a {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
-      .slogan-list li:nth-child(odd) {
-        margin-right: 15%;
-        /*105px*/ }
-      .slogan-list li:nth-child(-n+2) {
-        margin-bottom: 2rem; } }
+      .slogan-list li {
+        width: 42.5%; }
+        .slogan-list li:nth-child(odd) {
+          margin-right: 15%;
+          /*105px*/ }
+        .slogan-list li:nth-child(-n+2) {
+          margin-bottom: 2rem; } }
   @media (max-width: 767px) {
     .slogan-list li {
+      width: 100%;
       margin-right: 0px; }
       .slogan-list li:nth-child(odd) {
         margin-right: 0px; }
@@ -635,7 +662,7 @@ a {
     margin-bottom: 2.5rem; }
 
 .designer-list {
-  width: 100%;
+  /*width: 100%;*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -679,14 +706,14 @@ a {
   .designer-list a:hover h3 {
     color: white; }
 
-.white-img {
-  position: absolute;
-  top: 0px;
-  width: 100%;
-  padding-top: 84.26%;
-  background-color: white;
-  z-index: 1; }
-
+/*.white-img{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    padding-top: 84.26%;
+    background-color: white;
+    z-index: 1;
+}*/
 .designer_1 {
   background-image: url(../images/product-8.png); }
 
@@ -694,14 +721,13 @@ a {
   background-image: url(../images/product-9.png); }
 
 .designer-img {
-  /*width: ;
-    height: */
   position: absolute;
   top: 0px;
   width: 100%;
   padding-top: 84.26%;
   background-size: cover;
-  opacity: 0.5;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: overlay;
   z-index: 2; }
 
 /* =============== recommand =============== */
@@ -792,27 +818,15 @@ a {
     color: #000;
     margin-bottom: 1.5rem; }
   .inform-container .submit {
-    border: none;
-    margin: 0;
-    padding: 0;
-    width: auto;
-    overflow: visible;
-    background: transparent;
-    /* inherit font & color from ancestor */
-    color: inherit;
-    font: inherit;
-    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
-    line-height: normal;
-    /* Corrects font smoothing for webkit */
-    -webkit-font-smoothing: inherit;
-    -moz-osx-font-smoothing: inherit;
-    /* Corrects inability to style clickable `input` types in iOS */
-    -webkit-appearance: none;
-    padding: 1rem 143px;
+    /* @include reset-btn;*/
+    width: 50%;
+    padding: 1rem 0;
+    border: 0px;
     background-color: #AA0601;
     display: block;
     margin: 0 auto;
-    color: white; }
+    color: white;
+    cursor: pointer; }
     .inform-container .submit:hover {
       background-color: pink;
       color: #650300; }
@@ -913,7 +927,7 @@ a {
 
 /* serial nav */
 .serial-list {
-  font-family: "Roboto, sans-serif"; }
+  font-family: "Roboto"; }
   .serial-list li {
     display: block;
     width: 33.33%;

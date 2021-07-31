@@ -16,7 +16,7 @@
 
 <body>
   <header class="header">
-    <h1><a href="./index.html"></a></h1>
+    <h1><a href="./index.html">HelloGlasses</a></h1>
     <ul class='nav'>
       <li><a href="./serial.html">系列鏡框</a></li>
       <li><a href="#">門市據點</a></li>
@@ -32,7 +32,7 @@
     <h2>看得清，才能看得遠</h2>
   </div>
 </section>
-<section class="slogan ">
+<section class="slogan">
   <div class="container container-padding">
     <h2>用專業的心，做專業的事</h2>
     <ul class='slogan-list'>
@@ -61,7 +61,7 @@
 </section>
 <section class="classic_serial container container-padding">
   <h2>經典系列鏡框</h2>
-  <ul class='classic-list'>
+  <ul class='classic-list text-upper'>
     <li>
       <a href="./serial.html">
         <div class='classic-1 serial-img'>
@@ -72,7 +72,7 @@
         </div>
         <div class='serial-name '>
           <img src="./assets/images/icon-sun.svg" alt="optical">
-          <h3>optical</h3>
+          <h3 >optical</h3>
         </div>
       </a>
     </li>
@@ -113,9 +113,9 @@
     <ul class='designer-list'>
       <li>
         <a href="#">
-          <div class="white-img"></div>
+          <!--div class="white-img"></div-->
           <div href='#' class='designer_1 designer-img'></div>
-          <h3>Double_A+</h3>
+          <h3 class='text-nowrap'>Double A+</h3>
         </a>
       </li>
       <li >
@@ -136,7 +136,7 @@
       <div class="recommand-content">
         <h4>Jessy</h4>
         <p>眼鏡品質優良，下次還會想來這邊購買！</p>
-        <h4 class='date'>2020/10/31</h4>
+        <time class='date'>2020/10/31</time>
       </div>
     </li>
     <li class='recommand-card'>
@@ -144,7 +144,7 @@
       <div class="recommand-content">
         <h4>凱倫</h4>
         <p>做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
-        <h4 class='date'>2021/06/20</h4>
+        <time class='date'>2021/06/20</time>
       </div>
     </li>
     <li class='recommand-card'>
@@ -152,7 +152,7 @@
       <div class="recommand-content">
         <h4>悠悠</h4>
         <p>謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
-        <h4 class='date'>2020/12/25</h4>
+        <time class='date'>2020/12/25</time>
       </div>
     </li>
     <li class='recommand-card'>
@@ -160,7 +160,7 @@
       <div class="recommand-content">
         <h4>Kyuan</h4>
         <p>服務很好，品質沒有任何問題，非常喜歡。</p>
-        <h4 class='date'>2021/04/18</h4>
+        <time class='date'>2021/04/18</time>
       </div>
     </li>
   </ul>
@@ -178,16 +178,16 @@
           <input type="text" id='name' placeholder="陳小明">
         </li>
         <li>
-          <lable>聯絡電話</lable>
-          <input type="text" placeholder="0912-345-678">
+          <lable for="phone">聯絡電話</lable>
+          <input type="text" id='phone' placeholder="0912-345-678">
         </li>
         <li>
-          <lable>電子郵件</lable>
-          <input type="text" placeholder="example@email.com">
+          <lable for='email'>電子郵件</lable>
+          <input type="text" id='email' placeholder="example@email.com">
         </li>
         <li>
-          <lable>意見反應</lable>
-          <textarea name="mytext" placeholder="請輸入您的意見"></textarea >
+          <lable for='comment'>意見反應</lable>
+          <textarea name="mytext" id='comment' placeholder="請輸入您的意見"></textarea >
         </li>
         <li class='contact-checkbox'>
           <label for="privacy"></label>
