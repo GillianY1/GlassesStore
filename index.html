@@ -5,13 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>首頁</title>
+  <title>
+    首頁
+  </title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.google.com/specimen/Roboto?query=roboto" rel="stylesheet">
   <link href="https://fonts.google.com/specimen/Noto+Sans?query=san" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style/all.css">
   <link rel="stylesheet" href="./assets/style/pages/index.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -27,14 +30,16 @@
 
   
 <section class="banner ">
-  <div class="banner-text">
+  <div class="banner-text" data-aos="fade-left"
+  data-aos-duration="3000">
     <h3>Promise-Desert 2020 早春系列</h3>
     <h2>看得清，才能看得遠</h2>
   </div>
 </section>
 <section class="slogan">
   <div class="container container-padding">
-    <h2>用專業的心，做專業的事</h2>
+    <h2  data-aos="fade-left"
+    data-aos-duration="3000">用專業的心，做專業的事</h2>
     <ul class='slogan-list'>
       <li>
         <img src="./assets/images/icon-dollar.svg" alt="">
@@ -62,7 +67,8 @@
 <section class="classic_serial container container-padding">
   <h2>經典系列鏡框</h2>
   <ul class='classic-list text-upper'>
-    <li>
+    <li data-aos="fade-left"
+    data-aos-duration="3000">
       <a href="./serial.html">
         <div class='classic-1 serial-img'>
           <div class='serial-name serial-img-name'>
@@ -76,7 +82,8 @@
         </div>
       </a>
     </li>
-    <li>
+    <li  data-aos="fade-right"
+    data-aos-duration="3000">
       <a href="#">
         <div class='classic-2 serial-img'>
           <div class='serial-name serial-img-name'>
@@ -90,7 +97,8 @@
         </div>
       </a>
     </li>
-    <li>
+    <li  data-aos="fade-left"
+    data-aos-duration="3000">
       <a href="#">
         <div class='classic-3 serial-img'>
           <div class='serial-name serial-img-name'>
@@ -131,7 +139,8 @@
 <section class="recommand container container-padding">
   <h2>顧客推薦</h2>
   <ul>
-    <li class='recommand-card'>
+    <li class='recommand-card'  data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">
       <div class="customer-1 customer-img"></div>
       <div class="recommand-content">
         <h4>Jessy</h4>
@@ -139,7 +148,9 @@
         <time class='date'>2020/10/31</time>
       </div>
     </li>
-    <li class='recommand-card'>
+    <li class='recommand-card'  data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom" data-aos-offset="100"
+    data-aos-easing="ease-in-sine">
       <div class="customer-2 customer-img"></div>
       <div class="recommand-content">
         <h4>凱倫</h4>
@@ -147,7 +158,9 @@
         <time class='date'>2021/06/20</time>
       </div>
     </li>
-    <li class='recommand-card'>
+    <li class='recommand-card'  data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom" data-aos-offset="200"
+    data-aos-easing="ease-in-sine">
       <div class="customer-3 customer-img"></div>
       <div class="recommand-content">
         <h4>悠悠</h4>
@@ -155,7 +168,9 @@
         <time class='date'>2020/12/25</time>
       </div>
     </li>
-    <li class='recommand-card'>
+    <li class='recommand-card'  data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom" data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
       <div class="customer-4 customer-img"></div>
       <div class="recommand-content">
         <h4>Kyuan</h4>
@@ -166,7 +181,8 @@
   </ul>
 </section>
 <section class="inform">
-  <div class="container container-padding inform-container">
+  <div class="container container-padding inform-container "  data-aos="fade-left"
+  data-aos-duration="3000">
     <h2>聯絡我們</h2>
     <p class='inform-desc'>
       我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
@@ -202,45 +218,72 @@
 
 
 
-  <footer class="footer">
-    <div class="container">
-      <div class='footer-nav d-flex-sb'>
-        <ul class='footer-nav-items d-flex-c'>
-          <li><a href="./index.html">首頁</a></li>
-          <li><a href="./serial.html">系列鏡框</a></li>
-          <li><a href="#">門市據點</a></li>
-          <li><a href="#">部落格</a></li>
-          <li><a href="#">常見問題</a></li>
-        </ul>
-        <ul class='footer-media d-flex-c'>
-          <li><a href="#"><img src="./assets/images/icon-fb.svg" alt=""></a></li>
-          <li><a href="#"><img src="./assets/images/icon-ig.svg" alt=""></a></li>
-          <li><a href="#"><img src="./assets/images/icon-line.svg" alt=""></a></li>
-        </ul>
+    <footer class="footer">
+      <div class="container">
+        <div class='footer-nav d-flex-sb'>
+          <ul class='footer-nav-items d-flex-c'>
+            <li><a href="./index.html">首頁</a></li>
+            <li><a href="./serial.html">系列鏡框</a></li>
+            <li><a href="#">門市據點</a></li>
+            <li><a href="#">部落格</a></li>
+            <li><a href="#">常見問題</a></li>
+          </ul>
+          <ul class='footer-media d-flex-c'>
+            <li><a href="#"><img src="./assets/images/icon-fb.svg" alt=""></a></li>
+            <li><a href="#"><img src="./assets/images/icon-ig.svg" alt=""></a></li>
+            <li><a href="#"><img src="./assets/images/icon-line.svg" alt=""></a></li>
+          </ul>
+        </div>
+        <div class='footer-contacts d-flex-sb'>
+          <ul class='footer-contacts-list'>
+            <li><img class="" src="./assets/images/icon-phone.svg" alt=""><a href="tel:+886800000000">0800-000-000</a>
+            </li>
+            <li><img src="./assets/images/icon-mail.svg" alt=""><a
+                href="mailto:glasses@business.com">glasses@business.com</a></li>
+          </ul>
+          <ul class='footer-media-phone'>
+            <li><a href="#"><img src="./assets/images/icon-fb.svg" alt=""></a></li>
+            <li><a href="#"><img src="./assets/images/icon-ig.svg" alt=""></a></li>
+            <li><a href="#"><img src="./assets/images/icon-line.svg" alt=""></a></li>
+          </ul>
+        </div>
+        <div class='service-doc'>
+          <p class='mr-auto'>
+            Copyright © 2020 Glasses.All rights reserved.
+          </p>
+          <a href="#">隱私權政策</a>
+          <a href="#">服務條款</a>
+        </div>
       </div>
-      <div class='footer-contacts d-flex-sb'>
-        <ul class='footer-contacts-list'>
-          <li><img class="" src="./assets/images/icon-phone.svg" alt=""><a href="tel:+886800000000">0800-000-000</a></li>
-          <li><img src="./assets/images/icon-mail.svg" alt=""><a href="mailto:glasses@business.com">glasses@business.com</a></li>
-        </ul>
-        <ul class='footer-media-phone'>
-          <li><a href="#"><img src="./assets/images/icon-fb.svg" alt=""></a></li>
-          <li><a href="#"><img src="./assets/images/icon-ig.svg" alt=""></a></li>
-          <li><a href="#"><img src="./assets/images/icon-line.svg" alt=""></a></li>
-        </ul>
-      </div>
-      <div class='service-doc'>
-        <p class='mr-auto'>
-        Copyright © 2020 Glasses.All rights reserved.
-        </p>
-        <a href="#">隱私權政策</a>
-        <a href="#">服務條款</a>
-      </div>
-    </div> 
-  </footer>
-  <script src="./assets/js/vendors.js"></script>
-  <script src="./assets/js/all.js"></script>
+    </footer>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      //AOS.init();
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
 
+
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 120, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 400, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+      });
+    </script>
 </body>
 
 
